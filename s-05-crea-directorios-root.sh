@@ -21,11 +21,9 @@ mkdir -p unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/${ORACLE_SID^^}
 echo "Creación de directorios para Redo Log y Control Files Loop Device 3"
 mkdir -p unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/${ORACLE_SID^^}
 
-#Mostrando directorios creados
-echo "Mostrando directorios para control files y Redo Logs"
-ls -l unam_bda/gym_bd/redo_groups/u0*/app/oracle/oradata
-
 sudo chown -R oracle:oinstall unam_bda
 sudo chmod -R 750 unam_bda
 
-#sudo chmod 750 unam_bda/gym_bd/redo_groups/u0*
+#Mostrando directorios creados
+echo "Mostrando directorios para control files y Redo Logs"
+ls -l unam_bda/gym_bd/redo_groups/u0*/app/oracle/oradata

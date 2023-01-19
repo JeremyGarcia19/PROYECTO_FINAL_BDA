@@ -17,17 +17,17 @@ create database meproyga
   user sys identified by system2
   user system identified by system2
   logfile group 1 (
-    'unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo01a.log',
-    'unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo01b.log',
-    'unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/MEPROYGA/redo01c.log') size 500m blocksize 512,
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo01a.log',
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo01b.log',
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/MEPROYGA/redo01c.log') size 50m blocksize 512,
   group 2 (
-    'unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo02a.log',
-    'unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo02b.log',
-    'unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/MEPROYGA/redo02c.log') size 500m blocksize 512,
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo02a.log',
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo02b.log',
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/MEPROYGA/redo02c.log') size 50m blocksize 512,
   group 3 (
-    'unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo03a.log',
-    'unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo03b.log',
-    'unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/MEPROYGA/redo03c.log') size 500m blocksize 512
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo03a.log',
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo03b.log',
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/MEPROYGA/redo03c.log') size 50m blocksize 512
   maxloghistory 1
   maxlogfiles 6
   maxlogmembers 3
@@ -35,18 +35,18 @@ create database meproyga
   character set AL32UTF8
   national character set AL16UTF16
   extent management local
-  datafile 'unam_bda/gym_bd/compartido/system01.dbf'
+  datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/compartido/system01.dbf'
     size 1G reuse autoextend on next 1G maxsize unlimited
-  sysaux datafile 'unam_bda/gym_bd/compartido/sysaux01.dbf'
+  sysaux datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/compartido/sysaux01.dbf'
     size 500m reuse autoextend on next 100m maxsize unlimited
   default tablespace users
-    datafile 'unam_bda/gym_bd/compartido/users01.dbf'
+    datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/compartido/users01.dbf'
     size 200m reuse autoextend on next 200m maxsize 1G
   default temporary tablespace tempts1
-    tempfile 'unam_bda/gym_bd/compartido/temp01.dbf'
+    tempfile '/media/HDD/proyecto_final/unam_bda/gym_bd/compartido/temp01.dbf'
     size 50m reuse autoextend on next 10m maxsize 500m
   undo tablespace undotbs1
-    datafile 'unam_bda/gym_bd/compartido/undotbs01.dbf'
+    datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/compartido/undotbs01.dbf'
     size 250m reuse autoextend on next 250m maxsize 2G;
 
 Prompt Homologando password de sys y system
