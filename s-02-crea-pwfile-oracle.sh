@@ -3,7 +3,7 @@
 #@Autor:                Dulce Elízabeth Mendoza de la Vega
 #@Fecha		              18/01/2023
 #@Descripción:        	Script para crear un archivo de passwords
-
+# recuerda que este archivo se ejecuta por USUARIO ORACLE
 echo "Creando archivo de passwords"
 
 echo "Configurando ORACLE_SID"

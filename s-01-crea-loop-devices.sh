@@ -4,6 +4,7 @@
 #@Autor:                Dulce Elízabeth Mendoza de la Vega
 #@Fecha:                17/01/2023
 #@Descripción:          Script para crear los loop devices donde se almacenan redo y control files.
+#recuerda que este archivo se ejecuta por USUARIO ROOT (sudo)
 
 #Directorio raíz de la bd
 dir_images="unam_bda/disk_images"
@@ -80,11 +81,6 @@ if [ -d $dir_images ]; then
     
     echo verificando que los loop devices esten montados
     df -h
-
-    #Creando rutas para redo logs y control files en los loop devices
-    mkdir -p unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/${ORACLE_SID}
-    mkdir -p unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/${ORACLE_SID}
-    mkdir -p unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/${ORACLE_SID}
 
   fi
 else

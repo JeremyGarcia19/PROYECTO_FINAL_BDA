@@ -3,7 +3,7 @@
 #@Autor:                Dulce Elízabeth Mendoza de la Vega
 #@Fecha		              18/01/2023
 #@Descripción:        	Script para crear el pfile de la bdll
-
+# recuerda que este archivo se ejecuta por USUARIO ORACLE
 echo "1. Creando un archivo de parámetros básico"
 export ORACLE_SID=meproyga
 

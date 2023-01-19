@@ -4,7 +4,7 @@
 #@Autor:		Dulce Elízabeth Mendoza de la Vega
 #@Fecha:	 	17/01/2023
 #@Descripción:		Script para generar la estructura de directorios de la BD (Ejecutar donde se quiere generar)
-
+# recuerda que este archivo se ejecuta por USUARIO NORMAL
 #Directorio raíz de la bd
 dir_root_bd="unam_bda/gym_bd"
 
@@ -48,7 +48,5 @@ else
     mkdir -p unam_bda/gym_bd/modulo_02/u07/indices_g_ts
     mkdir -p unam_bda/gym_bd/modulo_02/u08/mod_gimasio_ts
   mkdir -p unam_bda/disk_images
-  sudo chown -R oracle:oinstall unam_bda
-  sudo chmod -R 750 unam_bda
   echo "Se ha creado la estructura de directorios"
 fi
