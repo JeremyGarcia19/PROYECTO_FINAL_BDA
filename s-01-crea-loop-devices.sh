@@ -3,10 +3,13 @@
 #@Autor:                Jeremy García Meneses
 #@Autor:                Dulce Elízabeth Mendoza de la Vega
 #@Fecha:                17/01/2023
-#@Descripción:          Script para generar la estructura de directorios de la BD (Ejecutar d$
+#@Descripción:          Script para crear los loop devices donde se almacenan redo y control files.
 
 #Directorio raíz de la bd
 dir_images="unam_bda/disk_images"
+
+#oracle sid
+export ORACLE_SID=meproyga
 
 mkdir -p $dir_images
 #Verificar si el directorio existe
@@ -72,7 +75,17 @@ if [ -d $dir_images ]; then
     fi
     mount -a
     echo "Se han creado los loop devices"
+    cat /etc/fstab
     echo "Reinicia el equipo para aplicar los cambios permanentemente"
+    
+    echo verificando que los loop devices esten montados
+    df -h
+
+    #Creando rutas para redo logs y control files en los loop devices
+    mkdir -p unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/${ORACLE_SID}
+    mkdir -p unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/${ORACLE_SID}
+    mkdir -p unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/${ORACLE_SID}
+
   fi
 else
   echo "Primero crea el directorio de las imagenes"
