@@ -16,6 +16,7 @@ orapwd FORCE=Y  \
   FILE="${ORACLE_HOME}/dbs/orapw${ORACLE_SID}" \
   FORMAT=12.2 \
   SYS=password
+  SYSBACKUP=password
 
 echo "Comprobando creación del archivo"
 ls -l ${ORACLE_HOME}/dbs/orapw${ORACLE_SID}

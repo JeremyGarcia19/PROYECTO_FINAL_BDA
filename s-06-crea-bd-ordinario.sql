@@ -16,18 +16,16 @@ whenever sqlerror exit rollback;
 create database meproyga
   user sys identified by system2
   user system identified by system2
+  user sysbackup identified by system2
   logfile group 1 (
     '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo01a.log',
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo01b.log',
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/MEPROYGA/redo01c.log') size 50m blocksize 512,
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo01b.log') size 100m blocksize 512,
   group 2 (
     '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo02a.log',
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo02b.log',
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/MEPROYGA/redo02c.log') size 50m blocksize 512,
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo02b.log') size 100m blocksize 512,
   group 3 (
     '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo03a.log',
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo03b.log',
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u03/app/oracle/oradata/MEPROYGA/redo03c.log') size 50m blocksize 512
+    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo03b.log') size 100m blocksize 512
   maxloghistory 1
   maxlogfiles 6
   maxlogmembers 3
@@ -49,7 +47,8 @@ create database meproyga
     datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/compartido/undotbs01.dbf'
     size 250m reuse autoextend on next 250m maxsize 2G;
 
-Prompt Homologando password de sys y system
+Prompt Homologando password de sys, system y sysbackup
 alter user sys identified by system2;
 alter user system identified by system2;
+alter user sysbackup identified by system2;
 whenever sqlerror continue;
