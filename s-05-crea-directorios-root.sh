@@ -2,7 +2,7 @@
 #@Autor:                Dulce Elízabeth Mendoza de la Vega
 #@Fecha		              18/01/2023
 #@Descripción:          Script para crear directorios de redo logs y control file
-# recuerda que este archivo se ejecuta por USUARIO ORACLE
+# recuerda que este archivo se ejecuta por USUARIO ROOT (sudo)
 
 
 # Creación de directorios para data files

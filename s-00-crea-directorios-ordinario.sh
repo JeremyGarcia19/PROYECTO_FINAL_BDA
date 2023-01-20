@@ -4,7 +4,7 @@
 #@Autor:		Dulce Elízabeth Mendoza de la Vega
 #@Fecha:	 	17/01/2023
 #@Descripción:		Script para generar la estructura de directorios de la BD (Ejecutar donde se quiere generar)
-# recuerda que este archivo se ejecuta por USUARIO NORMAL
+# recuerda que este archivo se ejecuta por USUARIO ROOT (sudo)
 #Directorio raíz de la bd
 dir_root_bd="unam_bda/gym_bd"
 
