@@ -15,7 +15,7 @@ echo "Creando archivo de passwords, se sobreescribe si existe"
 orapwd FORCE=Y  \
   FILE="${ORACLE_HOME}/dbs/orapw${ORACLE_SID}" \
   FORMAT=12.2 \
-  SYS=password
+  SYS=password \
   SYSBACKUP=password
 
 echo "Comprobando creación del archivo"
