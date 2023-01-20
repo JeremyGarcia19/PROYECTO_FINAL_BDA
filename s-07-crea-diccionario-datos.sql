@@ -17,4 +17,5 @@ Prompt conectando como usuario sys
 connect system/system2
 @?/sqlplus/admin/pupbld.sql
 
+connect sys/system2 as sysdba
 shutdown immediate
