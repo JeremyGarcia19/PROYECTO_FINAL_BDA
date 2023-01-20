@@ -16,7 +16,6 @@ whenever sqlerror exit rollback;
 create database meproyga
   user sys identified by system2
   user system identified by system2
-  user sysbackup identified by system2
   logfile group 1 (
     '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo01a.log',
     '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo01b.log') size 100m blocksize 512,
