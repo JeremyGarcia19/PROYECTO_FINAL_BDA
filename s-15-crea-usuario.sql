@@ -32,31 +32,31 @@ end;
 /
 
 Prompt Creando al usuario ADMIN_MODULO1
-create user admin_modulo1 identified by admin quota unlimited on users;;
+create user admin_modulo1 identified by admin quota unlimited;;
 grant create session, create table, create procedure, create user, create sequence to admin_modulo1;
 
 Prompt Creando al usuario BACKUP_MODULO1
-create user backup_modulo1 identified by backup_m1 quota unlimited on users;
+create user backup_modulo1 identified by backup_m1 quota unlimited;
 grant create session, sysbackup to backup_modulo1;
 
 Prompt Creando al usuario CONSULTAS_CLIENTE
-create user consultas_cliente identified by consultas_cliente quota unlimited on users;
+create user consultas_cliente identified by consultas_cliente quota unlimited;
 grant create session to consultas_cliente;
 
 Prompt Creando al usuario CONSULTAS_SESION
-create user consultas_sesion identified by consultas_sesion quota unlimited on users;
+create user consultas_sesion identified by consultas_sesion quota unlimited;
 grant create session to consultas_sesion;
 
 Prompt Creando al usuario ADMIN_MODULO2
-create user admin_modulo2 identified by admin quota unlimited on users;
+create user admin_modulo2 identified by admin quota unlimited;
 grant create session, create table, create procedure, create user, create sequence  to admin_modulo2;
 
 Prompt Creando al usuario BACKUP_MODULO2
-create user backup_modulo2 identified by backup_m1 quota unlimited on users;
+create user backup_modulo2 identified by backup_m1 quota unlimited;
 grant create session, sysbackup to backup_modulo2;
 
 Prompt Creando al usuario CONSULTAS_GYM
-create user consultas_gym identified by consultas_gym quota unlimited on users;
+create user consultas_gym identified by consultas_gym quota unlimited;
 grant create session to consultas_gym;
 
 --Para los usuarios de las consultas se les deben agregar privilegios de select una vez que existan las tablas
