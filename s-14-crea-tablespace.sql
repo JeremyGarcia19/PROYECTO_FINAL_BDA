@@ -128,8 +128,8 @@ create tablespace indices_sc_ts
   extent management local
   segment space management auto;
 
-create tablespace mod_sesioes_ts
-  datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u12/mod_sesioes_ts/mod_sesioes_ts.dbf'
+create tablespace mod_sesiones_ts
+  datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u12/mod_sesiones_ts/mod_sesiones_ts.dbf'
     size 100m
     autoextend on next 100m maxsize 1024m
     blocksize 8k
