@@ -223,6 +223,5 @@ create tablespace mod_gimasio_ts
   extent management local
   segment space management auto;
 
-
 prompt Listo!
 disconnect
