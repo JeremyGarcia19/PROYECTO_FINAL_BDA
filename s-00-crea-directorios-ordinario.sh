@@ -37,7 +37,7 @@ else
     mkdir -p unam_bda/gym_bd/modulo_01/u09/dispositivo_ts
     mkdir -p unam_bda/gym_bd/modulo_01/u10/historico_ts
     mkdir -p unam_bda/gym_bd/modulo_01/u11/blob_ts
-    mkdir -p unam_bda/gym_bd/modulo_01/u12/mod_sesioes_ts
+    mkdir -p unam_bda/gym_bd/modulo_01/u12/mod_sesiones_ts
   mkdir -p unam_bda/gym_bd/modulo_02
     mkdir -p unam_bda/gym_bd/modulo_02/u01/gimnasios_ts
     mkdir -p unam_bda/gym_bd/modulo_02/u02/empleado_ts
