@@ -16,15 +16,9 @@ whenever sqlerror exit rollback;
 create database meproyga
   user sys identified by system2
   user system identified by system2
-  logfile group 1 (
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo01a.log',
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo01b.log') size 100m blocksize 512,
-  group 2 (
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo02a.log',
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo02b.log') size 100m blocksize 512,
-  group 3 (
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u01/app/oracle/oradata/MEPROYGA/redo03a.log',
-    '/media/HDD/proyecto_final/unam_bda/gym_bd/redo_groups/u02/app/oracle/oradata/MEPROYGA/redo03b.log') size 100m blocksize 512
+  logfile group 1 size 100m blocksize 512,
+  group 2 size 100m blocksize 512,
+  group 3 size 100m blocksize 512
   maxloghistory 1
   maxlogfiles 6
   maxlogmembers 3
