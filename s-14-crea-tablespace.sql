@@ -14,7 +14,7 @@ prompt Conectando con sys
 connect sys/system2 as sysdba
 
 
-prompt Creando tablespace store_tbs1 ...
+prompt Creando tablespace ...
 
 create bigfile tablespace cliente_ts
   datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u01/cliente_ts/cliente_ts.dbf'
@@ -22,7 +22,7 @@ create bigfile tablespace cliente_ts
     autoextend on next 100m maxsize 1024m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -32,7 +32,7 @@ create tablespace catalogo1_ts
     autoextend off
     --blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
   
@@ -44,7 +44,7 @@ create tablespace sala_ts
     autoextend on next 100m maxsize 500m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -54,7 +54,7 @@ create tablespace derivados_cliente_ts
     autoextend on next 100m maxsize 1024m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -64,7 +64,7 @@ create bigfile tablespace medidas_ts
     autoextend on next 100m maxsize 1024m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -74,7 +74,7 @@ create tablespace sesion_ts
     autoextend on next 100m maxsize 1024m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -84,7 +84,7 @@ create bigfile tablespace calorias_ts
     autoextend on next 200m maxsize 2048m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -94,7 +94,7 @@ create tablespace dispositivo_ts
     autoextend on next 100m maxsize 1024m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -104,7 +104,7 @@ create tablespace historico_ts
     autoextend on next 100m maxsize 2048m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -114,7 +114,7 @@ create bigfile tablespace blob_ts
     autoextend on next 100m maxsize 5120m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -124,7 +124,7 @@ create tablespace indices_sc_ts
     autoextend on next 10m maxsize 700m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -134,7 +134,7 @@ create tablespace mod_sesioes_ts
     autoextend on next 100m maxsize 1024m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -148,7 +148,7 @@ create tablespace gimnasios_ts
     autoextend on next 100m maxsize 1024m
     blocksize 16k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -159,7 +159,7 @@ create tablespace empleado_ts
     autoextend on next 10m maxsize 500m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -169,7 +169,7 @@ create tablespace catalogo2_ts
     autoextend on next 100m maxsize 1024m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -179,7 +179,7 @@ create tablespace biometricos_ts
     autoextend on next 10m maxsize 200m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -189,7 +189,7 @@ create tablespace multimedia_ts
     autoextend on next 1024m maxsize 5120m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -199,7 +199,7 @@ create tablespace docs_ts
     autoextend on next 100m maxsize 1024m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -209,7 +209,7 @@ create tablespace indices_g_ts
     autoextend on next 100m maxsize 1024m
     blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
@@ -217,9 +217,8 @@ create tablespace mod_gimasio_ts
   datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_02/u08/mod_gimasio_ts/mod_gimasio_ts.dbf'
     size 50m
     autoextend on next 10m maxsize 700m
-    blocksize 8k
   nologging
-  offline
+  online
   extent management local
   segment space management auto;
 
