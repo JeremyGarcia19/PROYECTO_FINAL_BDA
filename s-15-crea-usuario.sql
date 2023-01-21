@@ -83,7 +83,7 @@ alter user admin_modulo1 quota unlimited on mod_sesiones_ts;
 alter user admin_modulo2 quota unlimited on gimnasios_ts;
 alter user admin_modulo2 quota unlimited on empleado_ts;
 alter user admin_modulo2 quota unlimited on catalogo2_ts;
-alter user admin_modulo2 quota unlimited on biometrico_ts;
+alter user admin_modulo2 quota unlimited on biometricos_ts;
 alter user admin_modulo2 quota unlimited on multimedia_ts;
 alter user admin_modulo2 quota unlimited on docs_ts;
 alter user admin_modulo2 quota unlimited on mod_gimnasio_ts;
@@ -101,15 +101,6 @@ alter user consultas_cliente temporary tablespace tempts1;
 alter user consultas_sesion temporary tablespace tempts1;
 alter user admin_modulo2 temporary tablespace tempts1;
 alter user backup_modulo2 temporary tablespace tempts1;
-
-prompt Cambiando el tablespace temporary de cada usuario.
-
-alter user admin_modulo1 undo tablespace undotbs1;
-alter user backup_modulo1 undo tablespace undotbs1;
-alter user consultas_cliente undo tablespace undotbs1;
-alter user consultas_sesion undo tablespace undotbs1;
-alter user admin_modulo2 undo tablespace undotbs1;
-alter user backup_modulo2 undo tablespace undotbs1;
 
 whenever sqlerror continue;
 

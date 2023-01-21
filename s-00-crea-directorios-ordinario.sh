@@ -46,7 +46,7 @@ else
     mkdir -p unam_bda/gym_bd/modulo_02/u05/multimedia_ts
     mkdir -p unam_bda/gym_bd/modulo_02/u06/docs_ts
     mkdir -p unam_bda/gym_bd/modulo_02/u07/indices_g_ts
-    mkdir -p unam_bda/gym_bd/modulo_02/u08/mod_gimasio_ts
+    mkdir -p unam_bda/gym_bd/modulo_02/u08/mod_gimnasio_ts
   mkdir -p unam_bda/disk_images
   echo "Se ha creado la estructura de directorios"
 fi

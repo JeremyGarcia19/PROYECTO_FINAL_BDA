@@ -146,7 +146,6 @@ create tablespace gimnasios_ts
   datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_02/u01/gimnasios_ts/gimnasios_ts.dbf'
     size 500m
     autoextend on next 100m maxsize 1024m
-    blocksize 16k
   nologging
   online
   extent management local
@@ -155,7 +154,6 @@ create tablespace gimnasios_ts
 create tablespace empleado_ts
   datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_02/u02/empleado_ts/empleado_ts.dbf'
     size 50m
-    
     autoextend on next 10m maxsize 500m
     blocksize 8k
   nologging
@@ -213,8 +211,8 @@ create tablespace indices_g_ts
   extent management local
   segment space management auto;
 
-create tablespace mod_gimasio_ts
-  datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_02/u08/mod_gimasio_ts/mod_gimasio_ts.dbf'
+create tablespace mod_gimnasio_ts
+  datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_02/u08/mod_gimnasio_ts/mod_gimnasio_ts.dbf'
     size 50m
     autoextend on next 10m maxsize 700m
   nologging
