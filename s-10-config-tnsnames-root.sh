@@ -26,6 +26,7 @@ ${ORACLE_SID^^} =
     )
     (CONNECT_DATA =      
       (SERVICE_NAME = ${ORACLE_SID}.fi.unam)
+      (SERVER = DEDICATED)
     )
   )
 

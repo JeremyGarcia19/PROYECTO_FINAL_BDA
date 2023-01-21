@@ -22,7 +22,8 @@ else
     mkdir -p unam_bda/gym_bd/redo_groups/u02
     mkdir -p unam_bda/gym_bd/redo_groups/u03
   mkdir -p unam_bda/gym_bd/compartido
-  mkdir -p unam_bda/gym_bd/archive_files
+  mkdir -p unam_bda/gym_bd/archive_files/u01
+  mkdir -p unam_bda/gym_bd/archive_files/u02
   mkdir -p unam_bda/gym_bd/backups
   mkdir -p unam_bda/gym_bd/fra
   mkdir -p unam_bda/gym_bd/modulo_01

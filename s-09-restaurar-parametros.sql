@@ -6,4 +6,4 @@
 Prompt Conenctando como usuario SYS
 connect sys/system2 as sysdba
 
-create spfile from pfile='/media/HDD/unam_bda/gym_bd/compartido/copiainicial-spparameter-pfile.txt';
+create spfile from pfile='/media/HDD/proyecto_final/unam_bda/gym_bd/compartido/copiainicial-spparameter-pfile.txt';

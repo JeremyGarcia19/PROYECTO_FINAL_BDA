@@ -9,9 +9,9 @@ connect sys/system2 as sysdba
 
 Prompt Configurando conexión compartida
 
-alter system set shared_servers = 10  scope = memory;
+alter system set shared_servers = 10  scope = both;
 
-alter system set dispatchers='(dispatchers=5)(PROTOCOL=tcp)' scope = memory;
+alter system set dispatchers='(dispatchers=5)(PROTOCOL=tcp)' scope = both;
 
 Prompt Verificación de parametros
 show parameter shared_servers;
