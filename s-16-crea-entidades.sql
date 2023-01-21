@@ -3,7 +3,7 @@
 --@Fecha:	 	      19/01/2023
 --@Descripción:		Script para crear a las tablas de la BD
 
-
+connect admin_modulo1/admin
 -- 
 -- TABLE: CLIENTE 
 --
@@ -93,6 +93,7 @@ CREATE TABLE MEDIDAS(
 ) TABLESPACE MEDIDAS_TS;
 
 
+connect admin_modulo2/admin
 
 -- 
 -- TABLE: GIMNASIO 
@@ -281,7 +282,7 @@ CREATE TABLE INSTRUCTOR_URL(
     REFERENCES INSTRUCTOR(EMPLEADO_ID)
 ) TABLESPACE EMPLEADO_TS;
 
-
+connect admin_modulo1/admin
 
 -- 
 -- TABLE: SALA 
@@ -519,12 +520,15 @@ CREATE UNIQUE INDEX CREDENCIAL_CREDENCIAL_ID_FK_UK ON CREDENCIAL(CLIENTE_ID);
 
 CREATE INDEX MEDIDAS_CLIENTE_ID_FK_IX ON SENSOR(CLIENTE_ID);
 
+connect admin_modulo2/admin
+
 -- 
 -- INDEX: EMPLEADO_BIOMETRICOS - EMPLEADO_ID_FK
 --
 
 CREATE INDEX EMPLEADO_BIOMETRICOS_EMPLEADO_ID_FK_IX ON EMPLEADO_BIOMETRICOS(EMPLEADO_ID);
 
+connect admin_modulo1/admin
 -- 
 -- INDEX: SALA - RESPONSABLE_ID_FK
 --
