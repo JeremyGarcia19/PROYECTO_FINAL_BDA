@@ -3,6 +3,8 @@
 --@Fecha:	 	      19/01/2023
 --@Descripción:		Script para crear a las tablas de la BD
 
+
+
 connect admin_modulo1/admin
 -- 
 -- TABLE: CLIENTE 
@@ -550,3 +552,4 @@ CREATE INDEX HIST_STATUS_DISP_DISPOSITIVO_ID_FK_FK_IX ON HIST_STATUS_DISP(DISPOS
 
 
 
+whenever sqlerror continue;
