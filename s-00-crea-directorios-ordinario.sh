@@ -23,7 +23,8 @@ else
     mkdir -p unam_bda/gym_bd/redo_groups/u03
   mkdir -p unam_bda/gym_bd/compartido
   mkdir -p unam_bda/gym_bd/archive_files
-  mkdir -p unam_bda/gym_bd/backups
+  mkdir -p unam_bda/gym_bd/backup_1/MEPROYGA/disk1/
+  mkdir -p unam_bda/gym_bd/backup_2/MEPROYGA/disk2/
   mkdir -p unam_bda/gym_bd/fra
   mkdir -p unam_bda/gym_bd/modulo_01
     mkdir -p unam_bda/gym_bd/modulo_01/u01/cliente_ts
