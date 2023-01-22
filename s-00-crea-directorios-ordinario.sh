@@ -38,7 +38,7 @@ else
     mkdir -p unam_bda/gym_bd/modulo_01/u09/dispositivo_ts
     mkdir -p unam_bda/gym_bd/modulo_01/u10/historico_ts
     mkdir -p unam_bda/gym_bd/modulo_01/u11/blob_ts
-    mkdir -p unam_bda/gym_bd/modulo_01/u12/mod_sesioes_ts
+    mkdir -p unam_bda/gym_bd/modulo_01/u12/mod_sesiones_ts
   mkdir -p unam_bda/gym_bd/modulo_02
     mkdir -p unam_bda/gym_bd/modulo_02/u01/gimnasios_ts
     mkdir -p unam_bda/gym_bd/modulo_02/u02/empleado_ts
@@ -47,7 +47,7 @@ else
     mkdir -p unam_bda/gym_bd/modulo_02/u05/multimedia_ts
     mkdir -p unam_bda/gym_bd/modulo_02/u06/docs_ts
     mkdir -p unam_bda/gym_bd/modulo_02/u07/indices_g_ts
-    mkdir -p unam_bda/gym_bd/modulo_02/u08/mod_gimasio_ts
+    mkdir -p unam_bda/gym_bd/modulo_02/u08/mod_gimnasio_ts
   mkdir -p unam_bda/disk_images
   echo "Se ha creado la estructura de directorios"
 fi

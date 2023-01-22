@@ -1,5 +1,0 @@
-insert into PUESTO (PUESTO_ID, CLAVE, NOMBRE, DESCRIPCION) values (1, 'OQGRX', 'nibh', 'Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.');
-insert into PUESTO (PUESTO_ID, CLAVE, NOMBRE, DESCRIPCION) values (2, 'ESIKS', 'nec', 'Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum.');
-insert into PUESTO (PUESTO_ID, CLAVE, NOMBRE, DESCRIPCION) values (3, 'JTJQS', 'justo', 'Ut at dolor quis odio consequat varius.');
-insert into PUESTO (PUESTO_ID, CLAVE, NOMBRE, DESCRIPCION) values (4, 'MTFFM', 'semper', 'Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque.');
-insert into PUESTO (PUESTO_ID, CLAVE, NOMBRE, DESCRIPCION) values (5, 'QNRZR', 'commodo', 'Integer ac leo. Pellentesque ultrices mattis odio.');
