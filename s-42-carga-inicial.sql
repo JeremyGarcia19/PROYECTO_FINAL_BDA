@@ -48,4 +48,6 @@ Prompt Cargando DISPOSITIVO_SESION
 Prompt Cargando HIST_STATUS_DISP
 @s-41-carga-hist_status_disp.sql
 
+commit;
+
 whenever sqlerror continue;
