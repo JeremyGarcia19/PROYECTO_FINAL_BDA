@@ -17,7 +17,7 @@ dual;
  insert into backup_modulo1.sesion
  values ( v_sequence,TRUNC(DBMS_RANDOM.value(1,1000000000)),
  TRUNC(DBMS_RANDOM.value(0,1)),TRUNC(DBMS_RANDOM.value(1,100))
-  TRUNC(SYSDATE + DBMS_RANDOM.value(0,366))
+  TO_DATE('20-MAR-2006','DD-MON-YYYY')
   TRUNC(DBMS_RANDOM.value(1,1000000000)),TRUNC(DBMS_RANDOM.value(1,1000000000))
   );
  end loop;
@@ -57,7 +57,7 @@ begin
 dual;
  insert into backup_modulo1.HIST_STATUS_DISP
  values ( TRUNC(DBMS_RANDOM.value(1,1000000000)),
- TRUNC(SYSDATE + DBMS_RANDOM.value(1,365))
+ TO_DATE('20-MAR-2006','DD-MON-YYYY')
   TRUNC(DBMS_RANDOM.value(1,1000000000)),TRUNC(DBMS_RANDOM.value(1,1000000000))
   );
  end loop;
