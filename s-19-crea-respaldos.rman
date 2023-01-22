@@ -1,0 +1,18 @@
+run {
+configure device type disk parallelism 3;
+configure default device type to disk;
+configure controlfile autobackup format for device type disk clear;
+configure retention policy to recovery window of 30 days;
+configure archivelog deletion policy to backed up 2 times to disk;
+configure backup optimization on;
+allocate channel disk1 device type disk format '/media/HDD/proyecto_final/unam_bda/gym_bd/backup_1/MEPROYGA/disk1/data%d_backups_%u' maxpiecesize 1g;
+allocate channel disk2 device type disk format '/media/HDD/proyecto_final/unam_bda/gym_bd/backup_2/MEPROYGA/disk2/arch%d_backups_%u' maxpiecesize 1g;
+
+backup database plus archivelog format '/media/HDD/proyecto_final/unam_bda/gym_bd/backup_1/MEPROYGA/disk1/arch%d_backups_%u';
+backup as copy device type disk database format '/media/HDD/proyecto_final/unam_bda/gym_bd/backup_2/MEPROYGA/disk1/data%d_backups_%u';
+backup as backupset database format '/media/HDD/proyecto_final/unam_bda/gym_bd/backup_1/MEPROYGA/disk1/cf%d_backups_%u';
+backup spfile;
+backup as backupset incremental level 0 database;
+backup as backupset incremental level 1 database;
+backup as backupset incremental level 1 cumulative database;
+}
