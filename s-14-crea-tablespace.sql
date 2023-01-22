@@ -68,8 +68,8 @@ create bigfile tablespace medidas_ts
   extent management local
   segment space management auto;
 
-create tablespace sesion_ts
-  datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u07/sesion_ts/sesion_ts.dbf'
+create bigfile tablespace sesion_ts
+  datafile '/media/HDD/proyecto_final/unam_bda/g,ym_bd/modulo_01/u07/sesion_ts/sesion_ts.dbf'
     size 100m
     autoextend on next 100m maxsize 1024m
     blocksize 8k
@@ -98,7 +98,7 @@ create tablespace dispositivo_ts
   extent management local
   segment space management auto;
 
-create tablespace historico_ts
+create bigfile tablespace historico_ts
   datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u10/historico_ts/historico_ts.dbf'
     size 500m
     autoextend on next 100m maxsize 2048m
@@ -142,7 +142,7 @@ create tablespace mod_sesiones_ts
 --////////////////////MODULO: gimnasio//////////////////////////
 --//////////////////////////////////////////////////////////////
 
-create tablespace gimnasios_ts
+create bigfile tablespace gimnasios_ts
   datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_02/u01/gimnasios_ts/gimnasios_ts.dbf'
     size 500m
     autoextend on next 100m maxsize 1024m
