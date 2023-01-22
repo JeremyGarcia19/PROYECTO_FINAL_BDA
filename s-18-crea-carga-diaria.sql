@@ -3,7 +3,7 @@
 --@Fecha:	 	      19/01/2023
 --@Descripción:		Script para crear a los usuarios de la BD
 
-create sequence backup_modulo1.sesion
+create sequence sesion
  start with 1
  increment by 1
  nomaxvalue;
@@ -12,9 +12,9 @@ declare
  v_sequence number;
 begin
  for n in 1..500 loop
- select backup_modulo1.sesion into v_sequence from 
+ select sesion into v_sequence from 
 dual;
- insert into backup_modulo1.sesion
+ insert into sesion
  values ( v_sequence,TRUNC(DBMS_RANDOM.value(1,1000000000)),
  TRUNC(DBMS_RANDOM.value(0,1)),TRUNC(DBMS_RANDOM.value(1,100))
   TO_DATE('20-MAR-2006','DD-MON-YYYY')
@@ -24,7 +24,7 @@ dual;
 end;
 /
 
-create sequence backup_modulo1.bitacoras_calorias
+create sequence bitacoras_calorias
  start with 1
  increment by 1
  nomaxvalue;
@@ -33,9 +33,9 @@ declare
  v_sequence number;
 begin
  for n in 1..500000 loop
- select backup_modulo1.bitacoras_calorias into v_sequence from 
+ select bitacoras_calorias into v_sequence from 
 dual;
- insert into backup_modulo1.bitacoras_calorias
+ insert into bitacoras_calorias
  values ( TRUNC(DBMS_RANDOM.value(1,1000000000)),TRUNC(DBMS_RANDOM.value(1,100))
   TRUNC(DBMS_RANDOM.value(1,100)),
   TRUNC(DBMS_RANDOM.value(1,1000000000)),TRUNC(DBMS_RANDOM.value(1,1000000000))
@@ -44,7 +44,7 @@ dual;
 end;
 /
 
-create sequence backup_modulo1.HIST_STATUS_DISP
+create sequence HIST_STATUS_DISP
  start with 1
  increment by 1
  nomaxvalue;
@@ -53,9 +53,9 @@ declare
  v_sequence number;
 begin
  for n in 1..500 loop
- select backup_modulo1.HIST_STATUS_DISP into v_sequence from 
+ select HIST_STATUS_DISP into v_sequence from 
 dual;
- insert into backup_modulo1.HIST_STATUS_DISP
+ insert into HIST_STATUS_DISP
  values ( TRUNC(DBMS_RANDOM.value(1,1000000000)),
  TO_DATE('20-MAR-2006','DD-MON-YYYY')
   TRUNC(DBMS_RANDOM.value(1,1000000000)),TRUNC(DBMS_RANDOM.value(1,1000000000))
@@ -64,7 +64,7 @@ dual;
 end;
 /
 
-create sequence backup_modulo1.medidas
+create sequence medidas
  start with 1
  increment by 1
  nomaxvalue;
@@ -73,9 +73,9 @@ declare
  v_sequence number;
 begin
  for n in 1..1000 loop
- select backup_modulo1.medidas into v_sequence from 
+ select medidas into v_sequence from 
 dual;
- insert into backup_modulo1.medidas
+ insert into medidas
  values ( v_sequence, TRUNC(DBMS_RANDOM.value(1,100)),
 TRUNC(DBMS_RANDOM.value(1,100)),TRUNC(DBMS_RANDOM.value(1,1000000000)),
   TRUNC(DBMS_RANDOM.value(1,1000000000))
