@@ -36,8 +36,6 @@ create tablespace catalogo1_ts
   extent management local
   segment space management auto;
   
-  alter tablespace catalogo1_ts read only;
-
 create tablespace sala_ts
   datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u04/sala_ts/sala_ts.dbf'
     size 100m
