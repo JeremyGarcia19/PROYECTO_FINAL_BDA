@@ -6,6 +6,8 @@
 connect target "backup_modulo1@meproyga as as sysbackup";
 
 run {
+
+
 configure device type disk parallelism 3;
 configure default device type to disk;
 allocate channel disk1 device type disk format '/media/HDD/proyecto_final/unam_bda/gym_bd/backup_1/MEPROYGA/disk1/%d_backups/%u' maxpiecesize 1g;
