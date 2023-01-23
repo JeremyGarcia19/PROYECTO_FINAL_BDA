@@ -40,6 +40,3 @@ archive log list
 
 --Destino de los archive redo log en la FRA
 alter system set log_archive_dest_3 = 'LOCATION=USE_DB_RECOVERY_FILE_DEST MANDATORY' scope = both;
-
---Detenemos completamente la instancia
-shutdown

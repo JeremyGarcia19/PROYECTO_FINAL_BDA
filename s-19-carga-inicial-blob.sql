@@ -20,6 +20,7 @@ set serveroutput on
 ---
 ---
 Prompt Creando Procedimiento para cargar las fotos de los clientes
+connect admin_m1/admin
 create or replace procedure actualiza_cliente(
   p_cliente_id_inicio number,
   p_num_imagenes number
@@ -222,6 +223,7 @@ show errors;
 ---
 ---
 Prompt Creando Procedimiento para actualizar los biometricos de los empleados
+connect admin_m2/admin
 create or replace procedure actualiza_empleados_biometricos(
   p_empleado_biometricos_id_inicio number,
   p_num_imagenes number
@@ -505,15 +507,8 @@ end;
 /
 show errors;
 
-
 --Sección de carga de datos.
 begin
-  dbms_output.put_line('Cargando Fotos de los clientes');
-  actualiza_cliente(1,55);
-  dbms_output.put_line('Cargando código de barra de las credenciales');
-  actualiza_credencial(1,55);
-  dbms_output.put_line('Cargando logo de las disciplianas');
-  actualiza_disciplina(1,30);
   dbms_output.put_line('Cargando datos biometricos de los empleados');
   actualiza_empleados_biometricos(1,20);
   exception
@@ -523,7 +518,27 @@ begin
     rollback;
 end;
 /
+commit;
 
-  commit;
+connect admin_m1/admin
+--Sección de carga de datos.
+begin
+  dbms_output.put_line('Cargando Fotos de los clientes');
+  actualiza_cliente(1,55);
+  dbms_output.put_line('Cargando código de barra de las credenciales');
+  actualiza_credencial(1,55);
+  dbms_output.put_line('Cargando logo de las disciplianas');
+  actualiza_disciplina(1,30);
+  exception
+  when others then
+    dbms_output.put_line('Codigo ERROR: ' || sqlcode);
+    dbms_output.put_line('Codigo ERROR: ' || sqlerrm);
+    rollback;
+end;
+/
+
+commit;
+
+connect sys/system2 as sysdba
 
 whenever sqlerror continue;
