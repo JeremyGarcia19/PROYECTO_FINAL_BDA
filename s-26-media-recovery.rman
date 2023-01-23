@@ -1,0 +1,23 @@
+#@Autor:                Jeremy García Meneses
+#@Autor:                Dulce Elízabeth Mendoza de la Vega
+#@Fecha		              18/01/2023
+#@Descripción:        	Script para el media recovery de un data file dañado 
+#Mover archivo mv /media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u06/medidas_ts/medidas_ts.dbf /media/HDD/proyecto_final/
+run {
+    shutdown immediate;
+    startup mount;
+
+    #Poner el archivo dañado como offline
+    alter database datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u06/medidas_ts/medidas_ts.dbf' offline;
+
+    #Realizar una operación de restore (copiar el data file de un backup)
+    restore datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u06/medidas_ts/medidas_ts.dbf';
+
+    #Aplicar recovery (aplicar Redo Logs para poner el archivo al día).
+    recover datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u06/medidas_ts/medidas_ts.dbf';
+
+    #Poner el archivo online.
+
+    alter database open;
+    alter database datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u06/medidas_ts/medidas_ts.dbf' online;
+}

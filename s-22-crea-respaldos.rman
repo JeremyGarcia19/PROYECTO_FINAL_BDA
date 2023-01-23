@@ -1,0 +1,36 @@
+
+run{
+  configure device type disk parallelism 3;
+  configure controlfile autobackup format for device type disk clear;
+  configure retention policy to recovery window of 7 days;
+  configure archivelog deletion policy to backed up 3 times to disk;
+  configure backup optimization on;
+}
+
+run {
+  shutdown immediate;
+  startup mount;  
+  backup database plus archivelog;
+  alter database open;  
+}
+
+run{
+  shutdown immediate;
+  startup mount;
+  backup as copy device type disk database;
+  alter database open;  
+}
+
+run{
+  shutdown immediate;
+  startup mount;
+  backup as backupset database;
+  alter database open;  
+}
+
+run{
+  shutdown immediate;
+  startup mount;
+  backup spfile;
+  alter database open;  
+}
