@@ -1,3 +1,8 @@
+#@Autor:                Jeremy García Meneses
+#@Autor:                Dulce Elízabeth Mendoza de la Vega
+#@Fecha:		            22/01/2023
+#@Descripción:        	Script para hacer un backup offline cumulativo nivel 0
+
 run{
   shutdown immediate;
   startup mount;

@@ -1,3 +1,8 @@
+--@Autor:		      Jeremy García Meneses
+--@Autor:		      Dulce Elízabeth Mendoza de la Vega
+--@Fecha:	 	      19/01/2023
+--@Descripción:		Script para crear la carga inicial de datos blob
+
 connect sys/system2 as sysdba
 
 whenever sqlerror exit rollback;

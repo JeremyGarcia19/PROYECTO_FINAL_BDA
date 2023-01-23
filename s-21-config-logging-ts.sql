@@ -1,7 +1,7 @@
 --@Autor:                Jeremy García Meneses
 --@Autor:                Dulce Elízabeth Mendoza de la Vega
---@Fecha		              20/01/2023
---@Descripción:        	Script para habilitar la generación de datos de redo en los tablespaces necesarios
+--@Fecha		             20/01/2023
+--@Descripción:        	 Script para habilitar la generación de datos de redo en los tablespaces necesarios
 
 connect sys/system2 as sysdba
 
