@@ -5,6 +5,13 @@
 
 connect sys/system2 as sysdba
 
+--Carpetas para backups
+!sudo mkdir -p /media/HDD/proyecto_final/unam_bda/gym_bd/backups/u01
+!sudo mkdir -p /media/HDD/proyecto_final/unam_bda/gym_bd/backups/u02
+
+!sudo chown -R oracle:oinstall /media/HDD/proyecto_final/unam_bda/gym_bd
+!sudo chmod -R 750 /media/HDD/proyecto_final/unam_bda/gym_bd
+
 --Activación de flashback
 alter database flashback on;
 
@@ -26,8 +33,4 @@ alter tablespace docs_ts logging;
 alter tablespace mod_gimnasio_ts logging;
 
 
-!sudo mkdir -p /media/HDD/proyecto_final/unam_bda/gym_bd/backups/u01
-!sudo mkdir -p /media/HDD/proyecto_final/unam_bda/gym_bd/backups/u02
 
-!sudo chown -R oracle:oinstall /media/HDD/proyecto_final/unam_bda/gym_bd
-!sudo chmod -R 750 /media/HDD/proyecto_final/unam_bda/gym_bd

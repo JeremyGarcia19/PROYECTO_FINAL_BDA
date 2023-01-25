@@ -4,8 +4,6 @@
 #@Descripción:        	Script para el media recovery de un data file dañado 
 
 run {
-    shutdown immediate;
-    startup mount;
 
     #Poner el archivo dañado como offline
     alter database datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u06/medidas_ts/medidas_ts.dbf' offline;
@@ -17,7 +15,5 @@ run {
     recover datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u06/medidas_ts/medidas_ts.dbf';
 
     #Poner el archivo online.
-
-    alter database open;
     alter database datafile '/media/HDD/proyecto_final/unam_bda/gym_bd/modulo_01/u06/medidas_ts/medidas_ts.dbf' online;
 }

@@ -3,7 +3,7 @@
 --@Fecha		             20/01/2023
 --@Descripción:        	 Script para simular los datos que se cargan en un dia.
 
-connect sys/system2 as sysdba
+connect admin_m1/admin
 
 set serveroutput on
 
